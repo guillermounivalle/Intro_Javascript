@@ -49,4 +49,22 @@ console.log(nombre_1);
   //Null  Ningún valor
   var init = null;
 
- 
+ //Propiedades de un array
+    //tamaño del array 
+    var sizeArray = nombres.length;
+    document.write(">El tamaño del array nombres es de ==> " + sizeArray);
+
+    //Agregando valores al final del array
+    nombres.push("Pedro", "Juan");
+
+    //Borrando el último valor del array. Se usa la función pop()
+    nombres.pop();
+    
+    //Concatenando arrays
+    var nombres_1 = ["Caro", "Pipe"];
+    var nombres_2 = nombres.concat(nombres_1);
+
+    //join permite agregar un parametro entre cada elemento del array
+    var nombres_3 = nombres_2.sort();
+    document.write(nombres_3);
+    
