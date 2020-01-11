@@ -67,4 +67,14 @@ console.log(nombre_1);
     //join permite agregar un parametro entre cada elemento del array
     var nombres_3 = nombres_2.sort();
     document.write(nombres_3);
-    
+
+    //condicionales
+
+    var nombreCond = "Guillerm",
+        edad = 25;
+
+    if(nombreCond == "Guillermo"){
+        document.write("Welcome " + nombreCond);
+    }else{
+        document.write("Welcome Jhon Doe");
+    }
