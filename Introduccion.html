@@ -6,13 +6,16 @@
 </head>  
 <body>
     <h1>Sitio web práctica</h1>
-    <!-- Aquí se agrega el script para trabajar javascript-->
-    <!-- Ejemplo
-        <script>
-            alert("Guille Alert");
-        </script>
-    -->
-    <!-- Para llamar a otro archivo (archivo externo) se pone el nombre del archivo en el atributo SRC. Ejemplo-->
+    <!-- Agregaremos un texto desde el archivo introduccion.js-->
+    <div id="subtitulo"></div>
+
+    
+    <form action = "" >
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="button" value="sumar" onclick="alert(suma(10, 50));">    
+    </form>
+    
     <script src="introduccion.js"></script>   
 </body>
 </html>

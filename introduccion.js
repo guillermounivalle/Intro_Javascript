@@ -31,7 +31,7 @@ console.log(nombre_1);
 
   //Array
   var nombres = ["Guillermo", "Paola", "Alberto"];
-  document.write(nombres[1]);
+  document.write(nombres[1] + "<br>");
 
   //Objeto
   var objeto = {
@@ -52,7 +52,7 @@ console.log(nombre_1);
  //Propiedades de un array
     //tamaño del array 
     var sizeArray = nombres.length;
-    document.write(">El tamaño del array nombres es de ==> " + sizeArray);
+    document.write(">El tamaño del array nombres es de ==> " + sizeArray + "<br>");
 
     //Agregando valores al final del array
     nombres.push("Pedro", "Juan");
@@ -66,15 +66,54 @@ console.log(nombre_1);
 
     //join permite agregar un parametro entre cada elemento del array
     var nombres_3 = nombres_2.sort();
-    document.write(nombres_3);
+    document.write(nombres_3 + "<br>");
 
     //condicionales
 
-    var nombreCond = "Guillerm",
+    var nombreCond = "Guillermo",
         edad = 25;
 
     if(nombreCond == "Guillermo"){
-        document.write("Welcome " + nombreCond);
+        document.write("Welcome " + nombreCond + "<br>");
     }else{
-        document.write("Welcome Jhon Doe");
+        document.write("Welcome Jhon Doe" + "<br>");
     }
+
+
+
+    //Funciones
+    function saludo(nombreFunc){
+        document.write("Hola " + nombreFunc + ", saludando desde una función" + "<br>");
+    }
+
+    saludo(nombreCond);
+
+    //Funciones con formulario
+
+
+    var suma = function () {
+        var numero1 = parseInt(document.getElementById("num1").value);
+        var numero2 = parseInt(document.getElementById("num2").value);
+
+        var resultado = numero1 + numero2;
+        return resultado;
+    }
+
+
+    // creando nodos del DOM
+        //1. Creando el elemento
+        var elemento = document.createElement("h2");
+
+        //2. Creando un nodo de texto
+        var contenido = document.createTextNode("Titular Hola Gulle");
+
+        //3. Añadir el nodo de texto al elemento
+        elemento.appendChild(contenido);
+
+        //4. Agregar atributos al elemento
+        elemento.setAttribute("aligne", "center");
+
+        //5.Agregar el elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento);
+
+
