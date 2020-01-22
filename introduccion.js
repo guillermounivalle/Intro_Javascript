@@ -117,3 +117,11 @@ console.log(nombre_1);
         document.getElementById("subtitulo").appendChild(elemento);
 
 
+    //Eventos en el DOM
+        //1. Creamos un botón y le asignamos el botón del archivo html
+        function listen_button_1 () {
+            console.log("Saludo desde button_1");
+            alert("Saludo desde button_1");
+        }
+        var button_1 = document.getElementById('button_1');
+        button_1.addEventListener('click', listen_button_1 );
